@@ -12,7 +12,7 @@ MediaPlayer.SetConfig({
 		-- Base URL where HTML content is located.
 		-- @type String
 		--
-		base_url = "http://samuelmaddock.github.io/gm-mediaplayer/"
+		base_url = "https://xkclxk.github.io/gm-mediaplayer-kor-cap/html/app/index.html"
 
 	},
 
