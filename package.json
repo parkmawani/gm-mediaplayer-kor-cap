@@ -1,1 +1,22 @@
-"release": "gh-pages -d html/app/"
+{
+  "name": "gm-mediaplayer-kor-cap",
+  "version": "1.0.0",
+  "description": "Media Player ============",
+  "main": "index.js",
+  "scripts": {
+    "release": "gh-pages -d html/app/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xkclxk/gm-mediaplayer-kor-cap.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xkclxk/gm-mediaplayer-kor-cap/issues"
+  },
+  "homepage": "https://github.com/xkclxk/gm-mediaplayer-kor-cap#readme",
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}
