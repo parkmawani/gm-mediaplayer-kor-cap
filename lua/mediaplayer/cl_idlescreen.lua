@@ -82,11 +82,6 @@ local DefaultIdlescreen = [[
 	<div class="content">
 		<h1>No media playing</h1>
 		<p>Hold %s while looking at the media player to reveal the queue menu.</p>
-
-		<div class="metastream">
-			Hey Media Player fans! The creator of this mod is making something new.
-			Check out <span class="metastream-link">getmetastream.com</span>!
-		</div>
 	</div>
 </body>
 </html>
