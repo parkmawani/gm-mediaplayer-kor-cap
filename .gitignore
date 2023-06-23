@@ -3,6 +3,17 @@
 *.sublime-workspace
 design
 
+## Garbage ##
+.svn/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/*
+*.code-workspace
+*.sh
+
 # old mediaplayer service code
 _deprecated
 node_modules/
