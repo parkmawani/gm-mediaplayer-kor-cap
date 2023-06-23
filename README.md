@@ -7,7 +7,7 @@ Media Player는 Garry's Mod용 애드온으로, 멀티플레이어에서 동기�
 
 해당 코드는 소스 코드를 수정한 포크 코드에 해당하므로 소스 코드가 필요 하신 경우 
 
-![Source Code](https://github.com/samuelmaddock/gm-mediaplayer)
+[![Source Code](https://avatars.githubusercontent.com/u/1656324?v=4)](https://github.com/samuelmaddock/gm-mediaplayer)
 
 이곳으로 이동하여 주십시요.
 
