@@ -1,0 +1,13 @@
+{
+  "title": "Media Player (KOR Caption)",
+  "type": "tool",
+  "tags": [
+    "fun",
+    "movie"
+  ],
+  "ignore": [
+    ".idea/*",
+    ".html/*",
+    ".design/*"
+  ]
+}

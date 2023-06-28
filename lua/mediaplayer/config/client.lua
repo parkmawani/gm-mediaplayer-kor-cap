@@ -12,7 +12,7 @@ MediaPlayer.SetConfig({
 		-- Base URL where HTML content is located.
 		-- @type String
 		--
-		base_url = "https://parkmawani.github.io/gm-mediaplayer-kor-cap/html/app/index.html"
+		base_url = "https://parkmawani.github.io/gm-mediaplayer-kor-cap/"
 
 	},
 
@@ -25,8 +25,7 @@ MediaPlayer.SetConfig({
 		-- URL of the request menu.
 		-- @type String
 		--
-		url = "https://parkmawani.github.io/gm-mediaplayer-kor-cap/html/app/request.html"
+		url = "https://parkmawani.github.io/gm-mediaplayer-kor-cap/request.html"
 
-	}
-
+	},
 })

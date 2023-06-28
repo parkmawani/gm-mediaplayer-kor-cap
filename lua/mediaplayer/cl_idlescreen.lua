@@ -78,10 +78,10 @@ local DefaultIdlescreen = [[
 	</style>
 </head>
 <body>
-	<img src="asset://mapimage/gm_construct" class="background">
+	<img src="https://haeji.mawani.kro.kr/pixel.gif" class="background">
 	<div class="content">
-		<h1>No media playing</h1>
-		<p>Hold %s while looking at the media player to reveal the queue menu.</p>
+		<h1>재생 중인 미디어 없음</h1>
+		<p>미디어 플레이어를 보면서 %s 를 누르고 대기열 메뉴를 표시합니다.</p>
 	</div>
 </body>
 </html>

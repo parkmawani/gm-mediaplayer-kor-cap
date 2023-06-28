@@ -2,7 +2,7 @@ include "shared.lua"
 
 DEFINE_BASECLASS( "mp_service_browser" )
 
--- data:text/html,<object type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" wmode="opaque" data="https://video.google.com/get_player?docid=0B1K_ByAqaFKGamdrajd6WXFUSEs0VHI4eTJHNHpPdw&partnerid=30&el=leaf&cc_load_policy=1&enablejsapi=1&autoplay=1&start=30" width="100%" height="100%" style="visibility: visible;"></object>
+-- data:text/html,<object type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" wmode="opaque" data="https://video.google.com/get_player?docid=0B1K_ByAqaFKGamdrajd6WXFUSEs0VHI4eTJHNHpPdw&partnerid=30&el=leaf&cc_load_policy=1&cc_lang_pref=ko&enablejsapi=1&autoplay=1&start=30" width="100%" height="100%" style="visibility: visible;"></object>
 
 -- https://docs.google.com/file/d/0B1K_ByAqaFKGamdrajd6WXFUSEs0VHI4eTJHNHpPdw/preview
 

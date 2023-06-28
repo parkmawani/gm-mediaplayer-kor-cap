@@ -181,6 +181,7 @@ end
 
 if CLIENT then
 
+	local mat2 = CreateMaterial( "AkonMat", "UnlitGeneric" )
 	local CeilPower2 = utils.CeilPower2
 	local SetDrawColor = surface.SetDrawColor
 	local SetMaterial = surface.SetMaterial
@@ -209,6 +210,7 @@ if CLIENT then
 		local mat = panel:GetHTMLMaterial()
 
 		if mat then
+			mat2:SetTexture( "$basetexture", mat:GetName() )
 			SetMaterial( mat )
 			DrawTexturedRect( 0, 0, w * pw, h * ph )
 		else

@@ -55,7 +55,7 @@ else -- CLIENT
 	local color_white = color_white
 
 	local StaticMaterial = Material( "theater/STATIC" )
-	local TextScale = 700
+	local TextScale = 800
 
 	function ENT:Draw()
 		self:DrawModel()
@@ -93,7 +93,7 @@ else -- CLIENT
 		local scale = w / TextScale
 		Start3D2D( pos, ang, scale )
 			local tw, th = w / scale, h / scale
-			draw.SimpleText( "Press E to begin watching", "MediaTitle",
+			draw.SimpleText( "E를 눌러 시청을 합니다.", "MediaTitle",
 				tw/2, th/2, color_white, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER )
 		End3D2D()
 	end

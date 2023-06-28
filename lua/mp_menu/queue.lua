@@ -45,7 +45,7 @@ function QUEUE_HEADER:Init()
 	self:SetTall( self.Height )
 
 	self.Label = vgui.Create( "DLabel", self )
-	self.Label:SetText( "NEXT UP" )
+	self.Label:SetText( "이어서" )
 	self.Label:SetFont( "MP.QueueHeader" )
 
 	self.AddVidBtn = vgui.Create( "MP.AddVideoButton", self )
@@ -92,7 +92,7 @@ function ADD_VIDEO_BTN:Init()
 	self:SetPadding( 4 )
 
 	self.BtnLbl:SetFont( "MP.QueueHeader" )
-	self.BtnLbl:SetText( "ADD MEDIA" )
+	self.BtnLbl:SetText( "미디어 추가" )
 	self.BtnLbl:SetTextColor( color_white )
 
 	self:SetIcon( "mp-plus" )
