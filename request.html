@@ -8,20 +8,32 @@
     <meta name="author" content="pixelTail Games">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
     <style>
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden; /* 스크롤바를 없애기 위해 overflow 속성 사용 */
+        }
         body {
             font-family: 'Roboto', sans-serif;
             background-color: #222; /* 더 어두운 배경 색상으로 변경 */
             margin: 0;
             padding: 0;
+            height: 100%;
+            overflow: hidden; /* 스크롤바를 없애기 위해 overflow 속성 사용 */
             color: #fff; /* 텍스트 색상을 흰색으로 설정 */
         }
         .content-container {
             max-width: 800px;
             margin: 50px auto;
-            padding: 250px;
+            padding: 100px;
             background-color: #333; /* 어두운 배경 색상으로 변경 */
             border-radius: 10px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
         h1 {
             font-size: 24px;
