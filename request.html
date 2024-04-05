@@ -1,165 +1,53 @@
-<!doctype html>
-<html lang="ko">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>미디어 플레이어 - 요청</title>
-    <meta name="description" content="Garry's Mod 미디어 플레이어 요청 페이지입니다.">
-    <meta name="keywords" content="garrysmod,media,player,request,search,youtube,vimeo,twitch,livestream,blip,reddit">
-    <meta name="author" content="pixelTail Games">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
-    <style>
-        @font-face {
-            src : url("https://galmuri.quiple.dev/galmuri/dist/Galmuri11.ttf");
-            font-family: "gal"
-        }
-        * {
-            font-family: "gal" !important;
-        }
-
-        html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            overflow: hidden; /* 스크롤바를 없애기 위해 overflow 속성 사용 */
-        }
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #222; /* 더 어두운 배경 색상으로 변경 */
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            overflow: hidden; /* 스크롤바를 없애기 위해 overflow 속성 사용 */
-            color: #fff; /* 텍스트 색상을 흰색으로 설정 */
-        }
-        .content-container {
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 100px;
-            background-color: #333; /* 어두운 배경 색상으로 변경 */
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-            position: absolute;
-            top: 40%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-        h1 {
-            font-size: 24px;
-            font-weight: 700;
-            color: #fff; /* 텍스트 색상을 흰색으로 변경 */
-            margin-bottom: 20px;
-            text-align: center;
-            white-space: nowrap;
-        }
-        .services {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        .media-service {
-            position: relative;
-            display: inline-block;
-            width: 100px;
-            height: 100px;
-            background-color: #eee;
-            border-radius: 50%;
-            margin: 0 10px;
-            cursor: pointer;
-            transition: transform 0.3s ease-in-out;
-        }
-        .media-service:hover {
-            transform: scale(1.1);
-        }
-        .media-service.logo-youtube {
-            background-image: url('https://cdn-icons-png.flaticon.com/256/1384/1384060.png'); /* YouTube 로고 이미지 파일 경로로 수정해주세요 */
-            background-size: cover;
-        }
-        .media-service.logo-youtube::after {
-            content: 'YouTube';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 14px;
-            font-weight: bold;
-            color: #000; /* 텍스트 색상을 까만색으로 설정 */
-            background-color: #fff; /* 배경을 하얀색으로 설정 */
-            opacity: 0;
-            transition: opacity 0.3s ease-in-out;
-            padding: 4px 8px; /* 텍스트 주변에 여백 추가 */
-        }
-        .media-service:hover::after {
-            opacity: 1;
-        }
-        .url-container {
-            text-align: center;
-            margin-top: 20px;
-        }
-        .url-notice {
-            font-size: 16px;
-            color: #666;
-            margin-bottom: 10px;
-        }
-        .url-input {
-            width: 70%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 14px;
-            margin-bottom: 10px;
-            box-sizing: border-box;
-        }
-        .url-submit {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 16px;
-            transition: background-color 0.3s;
-        }
-        .url-submit:hover {
-            background-color: #0056b3;
-        }
-        .footer-links {
-            text-align: center;
-            margin-top: 30px;
-        }
-        .footer-links a {
-            color: #999;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-        .footer-links a:hover {
-            color: #333;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/3d.css">
+    <title>Document</title>
 </head>
 <body>
-<div class="content-container">
-    <h1>원하는 서비스를 선택하여 미디어를 공유해보세요.</h1>
-    <div class="services">
-            <span class="media-service logo-youtube"
-                  data-href="http://www.youtube.com/"
-                  data-name="YouTube"
-                  data-service="yt"
-                  onclick="selectService(this);"></span>
-    </div>
-    <div class="url-container">
-        <h1 class="url-notice">지원되는 미디어를 요청해보세요.</h1>
-        <input id="urlinput"
-               type="text"
-               class="url-input"
-               placeholder="mp3, wav, ogg, jpg, png, webm"
-               autofocus="true"
-               onkeydown="onUrlKeyDown(event);">
-        <a href="javascript:requestUrl();" class="url-submit">요청</a>
-    </div>
-    <div class="footer-links">
-        <a href="./tos.html">이용 약관</a>
-        <a href="./privacy.html">개인 정보 보호 정책</a>
-    </div>
+<div>
+    <ul>
+        <li>
+            <a href="http://www.youtube.com/">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="fa fa-brands fa-youtube"></span>
+            </a>
+        </li>
+        <li>
+            <a href="privacy.html">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="fa fa-solid fa-shield-halved"></span>
+            </a>
+        </li>
+        <li>
+            <a href="tos.html">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="fa fa-solid fa-lock"></span>
+            </a>
+        </li>
+    </ul>
 </div>
-<script src="scripts/request.js"></script>
+<div class="url-container">
+    <h1 class="url-notice">지원되는 미디어를 요청해보세요.</h1>
+    <input id="urlinput"
+           type="text"
+           class="url-input"
+           placeholder="mp3, wav, ogg, jpg, png, webm"
+           autofocus="true"
+           onkeydown="onUrlKeyDown(event);">
+    <a href="javascript:requestUrl();" class="url-submit">요청</a>
+</div>
+<script src="https://kit.fontawesome.com/beb98df05a.js" crossorigin="anonymous"></script>
 </body>
 </html>
