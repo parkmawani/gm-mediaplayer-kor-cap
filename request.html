@@ -1,54 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/3d.css">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <title>Media Player - Request</title>
+    <meta name="description" content="Garry's Mod Media Player request page.">
+    <meta name="keywords" content="garrysmod,media,player,request,search,youtube,vimeo,twitch,livestream,blip,reddit">
+    <meta name="author" content="mawani">
+    <link rel="stylesheet" href="styles/request.css">
 </head>
 <body>
-<div>
-    <ul>
-        <li>
-            <a href="http://www.youtube.com/">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span class="fa fa-brands fa-youtube"></span>
-            </a>
-        </li>
-        <li>
-            <a href="privacy.html">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span class="fa fa-solid fa-shield-halved"></span>
-            </a>
-        </li>
-        <li>
-            <a href="tos.html">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span class="fa fa-solid fa-lock"></span>
-            </a>
-        </li>
-    </ul>
+<div style="position:absolute; top:0; left:0; right:0; bottom:0;">
+    <section class="content-container">
+        <div class="services">
+            <span class="media-service logo-youtube" data-href="http://www.youtube.com/" data-name="YouTube" data-service="yt" onclick="selectService(this)" onmouseover="hoverService()">
+</span>
+        </div>
+        <div class="url-container">
+            <input id="urlinput" class="url-input" placeholder="mp3, wav, ogg, jpg, png, webm" autofocus onkeydown="onUrlKeyDown(event)">
+            <a href="javascript:requestUrl();" class="url-submit">요청</a>
+        </div>
+        <div class="url-container">
+            <a href="./tos.html">서비스 이용 약관</a>&nbsp;
+            <a href="./privacy.html">개인정보 처리방침</a>
+        </div>
+    </section>
 </div>
-<div class="url-container">
-    <h1 class="url-notice">지원되는 미디어를 요청해보세요.</h1>
-    <input id="urlinput"
-           type="text"
-           class="url-input"
-           placeholder="mp3, wav, ogg, jpg, png, webm"
-           autofocus="true"
-           onkeydown="onUrlKeyDown(event);">
-    <a href="javascript:requestUrl();" class="url-submit">요청</a>
-</div>
-<script src="https://kit.fontawesome.com/beb98df05a.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 <script src="scripts/request.js"></script>
 </body>
 </html>
